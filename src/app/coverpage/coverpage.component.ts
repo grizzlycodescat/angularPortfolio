@@ -4,7 +4,7 @@ declare var particlesJS: any;
 @Component({
   selector: 'app-coverpage',
   templateUrl: './coverpage.component.html',
-  styleUrls: ['./coverpage.component.css']
+  styleUrls: ['./coverpage.component.scss']
 })
 
 export class CoverpageComponent implements OnInit {
@@ -59,8 +59,8 @@ export class CoverpageComponent implements OnInit {
         "enable": true,
         "distance": 300,
         "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 2
+        "opacity": 0.2,
+        "width": 0.8
       },
       "move": {
         "enable": true,
