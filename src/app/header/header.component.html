@@ -1,5 +1,5 @@
 
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="showFlag; else temp">
   <div class="jumbotron jumbotron-fluid" style="margin-bottom: 0">
     <h1 class="white-text">Hi! I'm 
       <span>Jerome</span>
@@ -8,28 +8,29 @@
   </div>
   <div class="jumbotron jumbotron-fluid" style="padding-top:0">
     <nav class="navbar">
+      <!-- <p>{{showFlag}}</p> -->
       <ul class="navbar-nav" id="link-nav" style="width:30%">
         <li class="nav-item">
           <span>
-            <a class="nav-link" routerLink="story">My Story</a>
+            <a class="nav-link" href="javascript:void(0)" (click)="toggleComponent(1)">My Story</a>
             <hr>
           </span>
         </li>
         <li class="nav-item">
           <span>
-            <a class="nav-link" routerLink="work">Where I've Been</a>
+            <a class="nav-link" href="javascript:void(0)" (click)="toggleComponent(2)">Where I've Been</a>
             <hr>
           </span>
         </li>
         <li class="nav-item">
           <span>
-            <a class="nav-link" routerLink="certification">My Qualifications</a>
+            <a class="nav-link" href="javascript:void(0)" (click)="toggleComponent(3)">My Qualifications</a>
             <hr>
           </span>
         </li>
         <li class="nav-item">
           <span>
-            <a class="nav-link" routerLink="contact">Get in Touch</a>
+            <a class="nav-link" href="javascript:void(0)" (click)="toggleComponent(4)">Get in Touch</a>
             <hr>
           </span>
         </li>
@@ -37,3 +38,10 @@
     </nav>
   </div>
 </div>
+<ng-template #temp>
+  <app-story *ngIf="templateCompName === 'story'"></app-story>
+  <app-work *ngIf="templateCompName === 'work'"></app-work>
+  <app-certification *ngIf="templateCompName === 'certs'"></app-certification>
+  <app-contact *ngIf="templateCompName === 'contact'"></app-contact>
+</ng-template>
+
