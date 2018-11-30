@@ -2,11 +2,36 @@
     background-color: transparent;
     position: fixed;
     z-index: 9999;
-    padding-top: 30%;
-    padding-left: 36%
+    margin-top: 15%;
+    margin-left: 36%;
+    pointer-events: all;
+}
+
+.white-text {
+    color:#FFF6D8;
+    span {
+        color:#B52F11;
+    }
 }
 
 .jumbotron {
     background: transparent;
+}
 
+#link-nav {
+    li {
+        font-size: 15px;
+        color: #FFF6D8;
+    }
+
+    hr {
+        clear:both;
+        display:block;
+        background-color:#FFF6D8;
+        height: 1px;
+    }
+
+    a {
+        color: #FFF6D8;
+    }
 }
