@@ -2,10 +2,10 @@
   <div class="h1">Work Experience</div>
 </div>
 
-<div class="timeline">
+<div class="timeline" *ngFor="let job of workExp.jobs">
   <div class="container left">
     <div class="content">
-      <h2>Office Name</h2>
+      <h2>{{job.organization}}</h2>
       <h3>2017</h3>
       <h3>Position</h3>
       <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim
