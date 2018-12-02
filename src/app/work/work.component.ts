@@ -45,7 +45,7 @@ export class WorkComponent implements OnInit {
 
   workExp =  
   {
-    mainDesc: "Here's the part where I share my work experience in my own words.",
+    mainDesc: "Here are some of my experiences in my own words.",
     jobs: [
       {
         title:'Frontend Developer',
@@ -80,7 +80,6 @@ export class WorkComponent implements OnInit {
     ],
     ending: {
       message: "If you've found my experiences interesting, there's a PDF of my resume that's available for you. Thank you for taking the time to go through it.",
-      link: "link"
     }
   }
 
