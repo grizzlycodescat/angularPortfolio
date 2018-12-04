@@ -1,3 +1,41 @@
-<p>
-  certification works!
-</p>
+<div class="container" style="overflow-y:auto; margin-top: 15%; margin-right: 14%">
+  <div class="row">
+    <div class="main-desc">
+      <div>
+        <h2 class="header-font">
+          My Education
+          <hr>
+        </h2>
+      </div>
+      <span style="font-size:1.5em">These are the official courses I've taken.</span>
+      <hr>
+    </div>
+    <div class="col-md-9 offset-sm-3" style="text-align: justify">
+      <ul class="timeline" style="color:#a09677">
+        <li *ngFor="let cert of mainCertificaiton">
+          <h4 style="color:#FFF6D8">{{cert.title}}</h4>
+          <h5 style="color:#FFF6D8">{{cert.institution}}</h5>
+          <h5 style="color:#FFF6D8">{{cert.period}}</h5>
+          <br>
+          <!-- <span>{{job.description}}</span> -->
+        </li>
+      </ul>
+    </div>
+    <div class="main-desc">
+      <hr>
+      <span>
+        Most of the stuff I've learned has been self taught, using the base that these qualifications have given me.  I'm continuously learning, and adding what I can to this list. Stay Tuned!
+      </span>
+      <hr>
+      <hr>
+      <div class="button-desc">
+        <hr>
+        <span>
+          <a href="/">
+            <img class="buttons" src="../../assets/img/iconfinder_web_10_3924905.svg">
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

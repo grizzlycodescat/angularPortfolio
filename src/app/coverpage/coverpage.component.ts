@@ -11,7 +11,7 @@ export class CoverpageComponent implements OnInit {
   particleProps = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 40,
         "density": {
           "enable": true,
           "value_area": 800

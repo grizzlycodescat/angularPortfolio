@@ -1,3 +1,29 @@
-<p>
-  contact works!
-</p>
+<div class="container" style="text-align: center">
+  <div class="heading-container" style="padding-top:5%">
+    <h2 style="color:#B52F11">Hit Me Up!</h2>
+    <hr>
+    <h4>Feel free to contact me if you'd like to find out more. Perhaps an interview or a project you'd like to work on together? The opportunities are endless!
+      <br>
+      By the way, the form is still in dev mode... so maybe just drop me a mail at 'jerome.papalie@gmail.com'.
+      <br>
+      Thank you in advance for being patient with me
+    </h4>
+  </div>
+  <div class="form-group">
+    <form (ngSubmit)="processForm()">
+      <!-- name -->
+      <div class="field">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" [(ngModel)]="name">
+      </div>
+      <!-- email -->
+      <div class="field">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" [(ngModel)]="email">
+      </div>
+      <!-- message -->
+      <div class="field">
+        <textarea class="form-control" name="message" placeholder="What's on your mind?" style="height: 200px" [(ngModel)]="message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+</div>

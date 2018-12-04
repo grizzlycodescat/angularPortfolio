@@ -1,24 +1,24 @@
 <div class="container mt-5 mb-5" style="position:absolute; overflow-y:auto">
-  <div>
-    <h2 class="header-font">
-      My Work Experience
-      <hr>
-    </h2>
-  </div>
   <div class="row">
     <div class="main-desc">
+      <div>
+        <h2 class="header-font">
+          My Work Experience
+          <hr>
+        </h2>
+      </div>
       <span>{{workExp.mainDesc}}</span>
       <hr>
     </div>
     <div class="col-md-9 offset-sm-3" style="text-align: justify">
-      <ul class="timeline" style="color:#a09677">
-        <li *ngFor="let job of workExp.jobs">
-          <h4 style="color:#FFF6D8">{{job.title}}</h4>
-          <h5 style="color:#FFF6D8">{{job.date}}</h5>
-          <br>
-          <span>{{job.description}}</span>
-        </li>
-      </ul>
+        <ul class="timeline" style="color:#a09677">
+          <li *ngFor="let job of workExp.jobs">
+            <h4 style="color:#FFF6D8">{{job.title}}</h4>
+            <h5 style="color:#FFF6D8">{{job.date}}</h5>
+            <br>
+            <span>{{job.description}}</span>
+          </li>
+        </ul>
     </div>
     <div class="main-desc">
       <hr>

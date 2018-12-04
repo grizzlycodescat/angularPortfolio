@@ -10,7 +10,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { WorkComponent } from './work/work.component';
 import { CertificationComponent } from './certification/certification.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
