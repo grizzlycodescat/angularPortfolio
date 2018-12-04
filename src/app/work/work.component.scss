@@ -39,3 +39,17 @@ ul.timeline > li:before {
   color: #FFF6D8;
   font-size: 15px;
 }
+
+.buttons {
+  height: auto;
+  width: 55px;
+}
+
+.button-desc {
+  margin-left: 30%;
+  display: inline-flex;
+
+  span {
+    padding: 3% 10%;
+  }
+}
