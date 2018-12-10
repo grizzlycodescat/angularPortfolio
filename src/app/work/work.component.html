@@ -1,4 +1,4 @@
-<div class="container mt-5 mb-5" style="position:absolute; overflow-y:auto">
+<!-- <div class="container mt-5 mb-5">
   <div class="row">
     <div class="main-desc">
       <div>
@@ -10,7 +10,7 @@
       <span>{{workExp.mainDesc}}</span>
       <hr>
     </div>
-    <div class="col-md-9 offset-sm-3" style="text-align: justify">
+    <div class="col-md-9 offset-sm-2" style="text-align: justify">
         <ul class="timeline" style="color:#a09677">
           <li *ngFor="let job of workExp.jobs">
             <h4 style="color:#FFF6D8">{{job.title}}</h4>
@@ -46,4 +46,61 @@
       </a>
     </span>
   </div>
+</div> -->
+
+<div class="table-responsive-xl container-fluid">
+  <table class="table" style="text-align:center">
+    <tr>
+      <th>
+        <div class="main-desc">
+          <h2 class="header-font">
+            My Work Experience
+            <hr>
+          </h2>
+          <span>{{workExp.mainDesc}}</span>
+          <hr>
+        </div>
+      </th>
+    </tr>
+    <tr>
+      <div style="text-align: justify;">
+        <ul class="timeline" style="color:#a09677">
+          <li *ngFor="let job of workExp.jobs">
+            <h4 style="color:#FFF6D8">{{job.title}}</h4>
+            <h5 style="color:#FFF6D8">{{job.date}}</h5>
+            <br>
+            <span>{{job.description}}</span>
+          </li>
+        </ul>
+      </div>
+    </tr>
+    <tr>
+      <div class="main-desc">
+        <hr>
+        <span>
+          {{workExp.ending.message}}
+        </span>
+        <hr>
+      </div>
+    </tr>
+    <tr style="text-align: left">
+      <div>
+        <span class="span-margin">
+          <a href="../../assets/file/Jerome_Papalie_19_11_18.pdf" download>
+            <img class="buttons" src="../../assets/img/iconfinder_circle-content-download-cloud_1495034.svg">
+          </a>
+        </span>
+        <span class="span-margin">
+          <a href="https://www.linkedin.com/in/jerome-papalie-933a15aa/">
+            <img class="buttons" src="../../assets/img/iconfinder_2018_social_media_popular_app_logo_linkedin_3225190.svg">
+          </a>
+        </span>
+        <span class="span-margin" style="padding-left: 45%">
+          <a href="/">
+            <img class="buttons" src="../../assets/img/iconfinder_web_10_3924905.svg">
+          </a>
+        </span>
+      </div>
+    </tr>
+  </table>
 </div>

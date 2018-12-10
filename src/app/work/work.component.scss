@@ -34,7 +34,7 @@ ul.timeline > li:before {
 }
 
 .main-desc {
-  margin-left: 30%;
+  // margin-left: 30%;
   color: #FFF6D8;
   font-size: 15px;
 }
@@ -51,4 +51,8 @@ ul.timeline > li:before {
   span {
     padding: 3% 10%;
   }
+}
+
+.span-margin {
+  margin: 5%;
 }
