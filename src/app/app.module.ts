@@ -11,8 +11,8 @@ import { WorkComponent } from './work/work.component';
 import { CertificationComponent } from './certification/certification.component';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 
 @NgModule({
